@@ -49,7 +49,7 @@ do
     ThemeManager.BuiltInThemes = {
         ["cats.cc"] = {
             1,
-            { "MainColor":"191919","FontFace":"Code","AccentColor":"828282","OutlineColor":"282828","BackgroundColor":"0f0f0f","FontColor":"ffffff" },
+            { "MainColor":"141414","FontFace":"Code","AccentColor":"afafaf","OutlineColor":"1b1b1b","BackgroundColor":"111111","FontColor":"e9e9e9" } ,
         },
     }
 
