@@ -1,3 +1,5 @@
+-- sisi
+
 local cloneref = (cloneref or clonereference or function(instance: any)
     return instance
 end)
@@ -219,12 +221,12 @@ local Library = {
 
     IsLightTheme = false,
     Scheme = {
-        MainColor = Color3.fromRGB(20, 20, 20),
         BackgroundColor = Color3.fromRGB(17, 17, 17),
+        MainColor = Color3.fromRGB(20, 20, 20),
         AccentColor = Color3.fromRGB(175, 175, 175),
         OutlineColor = Color3.fromRGB(27, 27, 27),
         FontColor = Color3.fromRGB(233, 233, 233),
-        FontFace = Font.fromEnum(Enum.Font.Code),
+        Font = Font.fromEnum(Enum.Font.Code),
 
         RedColor = Color3.fromRGB(255, 50, 50),
         DestructiveColor = Color3.fromRGB(220, 38, 38),
