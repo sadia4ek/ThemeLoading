@@ -220,28 +220,29 @@ local Library = {
     CornerRadiusDropdown = false, -- Temporary
 
     IsLightTheme = false,
-    Scheme = {
-        BackgroundColor = Color3.fromRGB(17, 17, 17),
-        MainColor = Color3.fromRGB(20, 20, 20),
-        AccentColor = Color3.fromRGB(175, 175, 175),
-        OutlineColor = Color3.fromRGB(27, 27, 27),
-        FontColor = Color3.new(233, 233, 233),
-        Font = Font.fromEnum(Enum.Font.Code),
-
-        RedColor = Color3.fromRGB(255, 50, 50),
-        DestructiveColor = Color3.fromRGB(220, 38, 38),
-        DarkColor = Color3.new(0, 0, 0),
-        WhiteColor = Color3.new(1, 1, 1),
-    },
-
-    Registry = {},
-	Scales = {},
-	ScalesOffset = {},
-
-    ImageManager = CustomImageManager,
-    ShowCursorBinding = string.sub(tostring({}), 10),
+	Scheme = {
+	    BackgroundColor = Color3.fromRGB(17, 17, 17),
+	    MainColor = Color3.fromRGB(20, 20, 20),
+	    AccentColor = Color3.fromRGB(175, 175, 175),
+	    OutlineColor = Color3.fromRGB(27, 27, 27),
+	    FontColor = Color3.fromRGB(233, 233, 233), -- Исправлено на fromRGB
+	    Font = Font.fromEnum(Enum.Font.Code),
+	
+	    RedColor = Color3.fromRGB(255, 50, 50),
+	    DestructiveColor = Color3.fromRGB(220, 38, 38),
+	    DarkColor = Color3.fromRGB(0, 0, 0),
+	    WhiteColor = Color3.fromRGB(255, 255, 255),
+	}
 }
 
+	Library.Registry = {}
+	Library.Scales = {}
+	Library.ScalesOffset = {}
+	
+	Library.ImageManager = CustomImageManager
+	Library.ShowCursorBinding = string.sub(tostring({}), 10)
+
+-- Проверка платформы
 if RunService:IsStudio() then
     if UserInputService.TouchEnabled and not UserInputService.MouseEnabled then
         Library.IsMobile = true
